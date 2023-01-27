@@ -1,8 +1,10 @@
-String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
-DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-Date date = new Date();
-System.out.println(dateFormat.format(date));
-var elements = new Array(20);
+
+
+var d = new Date();
+var time = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+console.log(time);
+
+var elements = new Array(21);
 var inputs = document.getElementsByTagName('input');
 
 
@@ -23,3 +25,4 @@ function save() {
         }
     }
 }
+
