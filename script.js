@@ -39,8 +39,9 @@ console.log(moment().format('H'))
 var currenttime = document.getElementById('currentTime')
 currenttime.innerHTML = moment().format('MMMM Do YYYY, h:mm a');
 var currentHour = moment().format('H')
+var currentHour = new Date().getHours();
 
-var currentHour = ["8","9","10","11","12","13","14","15","16","17","18","19"]
+//var currentHour = ["8","9","10","11","12","13","14","15","16","17","18","19"]
 function colorCode(){
 if (currentHour > 8){
     $("#8").addClass("past");
@@ -74,20 +75,20 @@ if (currentHour > 11){
     $("#11").addClass("future");
 }
 
-if (currentHour > 8){
-    $("#8").addClass("past");
-} else if (currentHour >= 8 && currentHour < 9) {
-    $("8").addClass("present");
-} else if (currentHour < 8) {
-    $("#8").addClass("future");
+if (currentHour > 12){
+    $("#12").addClass("past");
+} else if (currentHour >= 12 && currentHour < 13) {
+    $("#12").addClass("present");
+} else if (currentHour < 12) {
+    $("#12").addClass("future");
 }
 
-if (currentHour > 8){
-    $("#8").addClass("past");
-} else if (currentHour >= 8 && currentHour < 9) {
-    $("8").addClass("present");
-} else if (currentHour < 8) {
-    $("#8").addClass("future");
+if (currentHour > 13){
+    $("#13").addClass("past");
+} else if (currentHour >= 13 && currentHour < 14) {
+    $("#13").addClass("present");
+} else if (currentHour < 13) {
+    $("#13").addClass("future");
 }
 
 } 
