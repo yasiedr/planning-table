@@ -6,7 +6,7 @@ input{
 
 #container{
 justify-content: center;
-background-color: darkgrey;
+background-color: darkgrey; 
 }
 body {
     font-family: 'Open Sans', sans-serif;
